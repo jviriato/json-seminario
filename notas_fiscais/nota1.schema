@@ -1,0 +1,2691 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "nfeProc"
+  ],
+  "properties": {
+    "nfeProc": {
+      "$id": "#/properties/nfeProc",
+      "type": "object",
+      "title": "The Nfeproc Schema",
+      "required": [
+        "@versao",
+        "NFe",
+        "{http://www.portalfiscal.inf.br/nfe}protNFe"
+      ],
+      "properties": {
+        "@versao": {
+          "$id": "#/properties/nfeProc/properties/@versao",
+          "type": "number",
+          "title": "The @versao Schema",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "NFe": {
+          "$id": "#/properties/nfeProc/properties/NFe",
+          "type": "object",
+          "title": "The Nfe Schema",
+          "required": [
+            "infNFe",
+            "{http://www.w3.org/2000/09/xmldsig#}Signature"
+          ],
+          "properties": {
+            "infNFe": {
+              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe",
+              "type": "object",
+              "title": "The Infnfe Schema",
+              "required": [
+                "@Id",
+                "@versao",
+                "ide",
+                "emit",
+                "dest",
+                "det",
+                "total",
+                "transp",
+                "infAdic"
+              ],
+              "properties": {
+                "@Id": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/@Id",
+                  "type": "string",
+                  "title": "The @id Schema",
+                  "default": "",
+                  "examples": [
+                    "NFe35130309339936000205550030008469231382917898"
+                  ],
+                  "pattern": ".*$"
+                },
+                "@versao": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/@versao",
+                  "type": "number",
+                  "title": "The @versao Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                },
+                "ide": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide",
+                  "type": "object",
+                  "title": "The Ide Schema",
+                  "required": [
+                    "cUF",
+                    "cNF",
+                    "natOp",
+                    "indPag",
+                    "mod",
+                    "serie",
+                    "nNF",
+                    "dEmi",
+                    "tpNF",
+                    "cMunFG",
+                    "tpImp",
+                    "tpEmis",
+                    "cDV",
+                    "tpAmb",
+                    "finNFe",
+                    "procEmi",
+                    "verProc"
+                  ],
+                  "properties": {
+                    "cUF": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cUF",
+                      "type": "object",
+                      "title": "The Cuf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cUF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            35
+                          ]
+                        }
+                      }
+                    },
+                    "cNF": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cNF",
+                      "type": "object",
+                      "title": "The Cnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            38291789
+                          ]
+                        }
+                      }
+                    },
+                    "natOp": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/natOp",
+                      "type": "object",
+                      "title": "The Natop Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/natOp/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "VENDA DE MERCADORIAS"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "indPag": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/indPag",
+                      "type": "object",
+                      "title": "The Indpag Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/indPag/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "mod": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/mod",
+                      "type": "object",
+                      "title": "The Mod Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/mod/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            55
+                          ]
+                        }
+                      }
+                    },
+                    "serie": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/serie",
+                      "type": "object",
+                      "title": "The Serie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/serie/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            3
+                          ]
+                        }
+                      }
+                    },
+                    "nNF": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/nNF",
+                      "type": "object",
+                      "title": "The Nnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/nNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            846923
+                          ]
+                        }
+                      }
+                    },
+                    "dEmi": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/dEmi",
+                      "type": "object",
+                      "title": "The Demi Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/dEmi/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "2013-03-20"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "tpNF": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpNF",
+                      "type": "object",
+                      "title": "The Tpnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "cMunFG": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cMunFG",
+                      "type": "object",
+                      "title": "The Cmunfg Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cMunFG/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            3505708
+                          ]
+                        }
+                      }
+                    },
+                    "tpImp": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpImp",
+                      "type": "object",
+                      "title": "The Tpimp Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpImp/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "tpEmis": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpEmis",
+                      "type": "object",
+                      "title": "The Tpemis Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpEmis/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "cDV": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cDV",
+                      "type": "object",
+                      "title": "The Cdv Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/cDV/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            8
+                          ]
+                        }
+                      }
+                    },
+                    "tpAmb": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpAmb",
+                      "type": "object",
+                      "title": "The Tpamb Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/tpAmb/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "finNFe": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/finNFe",
+                      "type": "object",
+                      "title": "The Finnfe Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/finNFe/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "procEmi": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/procEmi",
+                      "type": "object",
+                      "title": "The Procemi Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/procEmi/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "verProc": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/verProc",
+                      "type": "object",
+                      "title": "The Verproc Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/ide/properties/verProc/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "ABACOS V50B0070"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "emit": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit",
+                  "type": "object",
+                  "title": "The Emit Schema",
+                  "required": [
+                    "CNPJ",
+                    "xNome",
+                    "xFant",
+                    "enderEmit",
+                    "IE",
+                    "CRT"
+                  ],
+                  "properties": {
+                    "CNPJ": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/CNPJ",
+                      "type": "object",
+                      "title": "The Cnpj Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/CNPJ/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            9339936000205
+                          ]
+                        }
+                      }
+                    },
+                    "xNome": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/xNome",
+                      "type": "object",
+                      "title": "The Xnome Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/xNome/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "NS2.Com Internet SA"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "xFant": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/xFant",
+                      "type": "object",
+                      "title": "The Xfant Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/xFant/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "NETSHOES"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "enderEmit": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit",
+                      "type": "object",
+                      "title": "The Enderemit Schema",
+                      "required": [
+                        "xLgr",
+                        "nro",
+                        "xBairro",
+                        "cMun",
+                        "xMun",
+                        "UF",
+                        "CEP",
+                        "cPais",
+                        "xPais"
+                      ],
+                      "properties": {
+                        "xLgr": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xLgr",
+                          "type": "object",
+                          "title": "The Xlgr Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xLgr/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "AV ARUANA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "nro": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/nro",
+                          "type": "object",
+                          "title": "The Nro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/nro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                854
+                              ]
+                            }
+                          }
+                        },
+                        "xBairro": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xBairro",
+                          "type": "object",
+                          "title": "The Xbairro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xBairro/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "TAMBORE"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "cMun": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/cMun",
+                          "type": "object",
+                          "title": "The Cmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/cMun/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                3505708
+                              ]
+                            }
+                          }
+                        },
+                        "xMun": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xMun",
+                          "type": "object",
+                          "title": "The Xmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xMun/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "BARUERI"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "UF": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/UF",
+                          "type": "object",
+                          "title": "The Uf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/UF/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "SP"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "CEP": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/CEP",
+                          "type": "object",
+                          "title": "The Cep Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/CEP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                6460908
+                              ]
+                            }
+                          }
+                        },
+                        "cPais": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/cPais",
+                          "type": "object",
+                          "title": "The Cpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/cPais/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1058
+                              ]
+                            }
+                          }
+                        },
+                        "xPais": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xPais",
+                          "type": "object",
+                          "title": "The Xpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/enderEmit/properties/xPais/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "BRASIL"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "IE": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/IE",
+                      "type": "object",
+                      "title": "The Ie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/IE/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            206257690116
+                          ]
+                        }
+                      }
+                    },
+                    "CRT": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/CRT",
+                      "type": "object",
+                      "title": "The Crt Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/emit/properties/CRT/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            3
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "dest": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest",
+                  "type": "object",
+                  "title": "The Dest Schema",
+                  "required": [
+                    "CPF",
+                    "xNome",
+                    "enderDest",
+                    "IE",
+                    "email"
+                  ],
+                  "properties": {
+                    "CPF": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/CPF",
+                      "type": "object",
+                      "title": "The Cpf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/CPF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            12345678900
+                          ]
+                        }
+                      }
+                    },
+                    "xNome": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/xNome",
+                      "type": "object",
+                      "title": "The Xnome Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/xNome/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "GIOVANI LIBRELOTTO"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "enderDest": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest",
+                      "type": "object",
+                      "title": "The Enderdest Schema",
+                      "required": [
+                        "xLgr",
+                        "nro",
+                        "xCpl",
+                        "xBairro",
+                        "cMun",
+                        "xMun",
+                        "UF",
+                        "CEP",
+                        "cPais",
+                        "xPais",
+                        "fone"
+                      ],
+                      "properties": {
+                        "xLgr": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xLgr",
+                          "type": "object",
+                          "title": "The Xlgr Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xLgr/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "AV RORAIMA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "nro": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/nro",
+                          "type": "object",
+                          "title": "The Nro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/nro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1000
+                              ]
+                            }
+                          }
+                        },
+                        "xCpl": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xCpl",
+                          "type": "object",
+                          "title": "The Xcpl Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xCpl/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "SALA 387"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "xBairro": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xBairro",
+                          "type": "object",
+                          "title": "The Xbairro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xBairro/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "CAMOBI"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "cMun": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/cMun",
+                          "type": "object",
+                          "title": "The Cmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/cMun/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                4316907
+                              ]
+                            }
+                          }
+                        },
+                        "xMun": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xMun",
+                          "type": "object",
+                          "title": "The Xmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xMun/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "SANTA MARIA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "UF": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/UF",
+                          "type": "object",
+                          "title": "The Uf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/UF/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "RS"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "CEP": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/CEP",
+                          "type": "object",
+                          "title": "The Cep Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/CEP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                97010041
+                              ]
+                            }
+                          }
+                        },
+                        "cPais": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/cPais",
+                          "type": "object",
+                          "title": "The Cpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/cPais/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1058
+                              ]
+                            }
+                          }
+                        },
+                        "xPais": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xPais",
+                          "type": "object",
+                          "title": "The Xpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/xPais/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Brasil"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "fone": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/fone",
+                          "type": "object",
+                          "title": "The Fone Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/enderDest/properties/fone/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                5591234567
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "IE": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/IE",
+                      "type": "object",
+                      "title": "The Ie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/IE/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "ISENTO"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "email": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/email",
+                      "type": "object",
+                      "title": "The Email Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/dest/properties/email/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "librelotto@mail.com"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "det": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det",
+                  "type": "object",
+                  "title": "The Det Schema",
+                  "required": [
+                    "@nItem",
+                    "prod",
+                    "imposto",
+                    "infAdProd"
+                  ],
+                  "properties": {
+                    "@nItem": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/@nItem",
+                      "type": "number",
+                      "title": "The @nitem Schema",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    },
+                    "prod": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod",
+                      "type": "object",
+                      "title": "The Prod Schema",
+                      "required": [
+                        "cProd",
+                        "cEAN",
+                        "xProd",
+                        "NCM",
+                        "CFOP",
+                        "uCom",
+                        "qCom",
+                        "vUnCom",
+                        "vProd",
+                        "cEANTrib",
+                        "uTrib",
+                        "qTrib",
+                        "vUnTrib",
+                        "indTot"
+                      ],
+                      "properties": {
+                        "cProd": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cProd",
+                          "type": "object",
+                          "title": "The Cprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cProd/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "025-1220-318-40"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "cEAN": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cEAN",
+                          "type": "object",
+                          "title": "The Cean Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cEAN/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                4051411545402
+                              ]
+                            }
+                          }
+                        },
+                        "xProd": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/xProd",
+                          "type": "object",
+                          "title": "The Xprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/xProd/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Chuteira Puma Esito Finale IT"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "NCM": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/NCM",
+                          "type": "object",
+                          "title": "The Ncm Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/NCM/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                64029990
+                              ]
+                            }
+                          }
+                        },
+                        "CFOP": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/CFOP",
+                          "type": "object",
+                          "title": "The Cfop Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/CFOP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                6108
+                              ]
+                            }
+                          }
+                        },
+                        "uCom": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/uCom",
+                          "type": "object",
+                          "title": "The Ucom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/uCom/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PAR"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "qCom": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/qCom",
+                          "type": "object",
+                          "title": "The Qcom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/qCom/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "vUnCom": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vUnCom",
+                          "type": "object",
+                          "title": "The Vuncom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vUnCom/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        },
+                        "vProd": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vProd",
+                          "type": "object",
+                          "title": "The Vprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vProd/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        },
+                        "cEANTrib": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cEANTrib",
+                          "type": "object",
+                          "title": "The Ceantrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/cEANTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                4051411545402
+                              ]
+                            }
+                          }
+                        },
+                        "uTrib": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/uTrib",
+                          "type": "object",
+                          "title": "The Utrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/uTrib/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PAR"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "qTrib": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/qTrib",
+                          "type": "object",
+                          "title": "The Qtrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/qTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "vUnTrib": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vUnTrib",
+                          "type": "object",
+                          "title": "The Vuntrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/vUnTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        },
+                        "indTot": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/indTot",
+                          "type": "object",
+                          "title": "The Indtot Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/prod/properties/indTot/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "imposto": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto",
+                      "type": "object",
+                      "title": "The Imposto Schema",
+                      "required": [
+                        "ICMS",
+                        "IPI",
+                        "PIS",
+                        "COFINS"
+                      ],
+                      "properties": {
+                        "ICMS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS",
+                          "type": "object",
+                          "title": "The Icms Schema",
+                          "required": [
+                            "ICMS00"
+                          ],
+                          "properties": {
+                            "ICMS00": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00",
+                              "type": "object",
+                              "title": "The Icms00 Schema",
+                              "required": [
+                                "orig",
+                                "CST",
+                                "modBC",
+                                "vBC",
+                                "pICMS",
+                                "vICMS"
+                              ],
+                              "properties": {
+                                "orig": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/orig",
+                                  "type": "object",
+                                  "title": "The Orig Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/orig/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        2
+                                      ]
+                                    }
+                                  }
+                                },
+                                "CST": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/CST",
+                                  "type": "object",
+                                  "title": "The Cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        0
+                                      ]
+                                    }
+                                  }
+                                },
+                                "modBC": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/modBC",
+                                  "type": "object",
+                                  "title": "The Modbc Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/modBC/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        3
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vBC": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/vBC",
+                                  "type": "object",
+                                  "title": "The Vbc Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/vBC/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        94.91
+                                      ]
+                                    }
+                                  }
+                                },
+                                "pICMS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/pICMS",
+                                  "type": "object",
+                                  "title": "The Picms Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/pICMS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        18
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vICMS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/vICMS",
+                                  "type": "object",
+                                  "title": "The Vicms Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/ICMS/properties/ICMS00/properties/vICMS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        17.08
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "IPI": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI",
+                          "type": "object",
+                          "title": "The Ipi Schema",
+                          "required": [
+                            "cEnq",
+                            "IPINT"
+                          ],
+                          "properties": {
+                            "cEnq": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI/properties/cEnq",
+                              "type": "object",
+                              "title": "The Cenq Schema",
+                              "required": [
+                                "$"
+                              ],
+                              "properties": {
+                                "$": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI/properties/cEnq/properties/$",
+                                  "type": "number",
+                                  "title": "The $ Schema",
+                                  "default": 0,
+                                  "examples": [
+                                    999
+                                  ]
+                                }
+                              }
+                            },
+                            "IPINT": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI/properties/IPINT",
+                              "type": "object",
+                              "title": "The Ipint Schema",
+                              "required": [
+                                "CST"
+                              ],
+                              "properties": {
+                                "CST": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI/properties/IPINT/properties/CST",
+                                  "type": "object",
+                                  "title": "The Cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/IPI/properties/IPINT/properties/CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        53
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "PIS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS",
+                          "type": "object",
+                          "title": "The Pis Schema",
+                          "required": [
+                            "PISAliq"
+                          ],
+                          "properties": {
+                            "PISAliq": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq",
+                              "type": "object",
+                              "title": "The Pisaliq Schema",
+                              "required": [
+                                "CST",
+                                "vBC",
+                                "pPIS",
+                                "vPIS"
+                              ],
+                              "properties": {
+                                "CST": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/CST",
+                                  "type": "object",
+                                  "title": "The Cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        1
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vBC": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/vBC",
+                                  "type": "object",
+                                  "title": "The Vbc Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/vBC/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        94.91
+                                      ]
+                                    }
+                                  }
+                                },
+                                "pPIS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/pPIS",
+                                  "type": "object",
+                                  "title": "The Ppis Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/pPIS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        1.65
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vPIS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/vPIS",
+                                  "type": "object",
+                                  "title": "The Vpis Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/PIS/properties/PISAliq/properties/vPIS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        1.57
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "COFINS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS",
+                          "type": "object",
+                          "title": "The Cofins Schema",
+                          "required": [
+                            "COFINSAliq"
+                          ],
+                          "properties": {
+                            "COFINSAliq": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq",
+                              "type": "object",
+                              "title": "The Cofinsaliq Schema",
+                              "required": [
+                                "CST",
+                                "vBC",
+                                "pCOFINS",
+                                "vCOFINS"
+                              ],
+                              "properties": {
+                                "CST": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/CST",
+                                  "type": "object",
+                                  "title": "The Cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        1
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vBC": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/vBC",
+                                  "type": "object",
+                                  "title": "The Vbc Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/vBC/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        94.91
+                                      ]
+                                    }
+                                  }
+                                },
+                                "pCOFINS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/pCOFINS",
+                                  "type": "object",
+                                  "title": "The Pcofins Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/pCOFINS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        7.6
+                                      ]
+                                    }
+                                  }
+                                },
+                                "vCOFINS": {
+                                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/vCOFINS",
+                                  "type": "object",
+                                  "title": "The Vcofins Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/imposto/properties/COFINS/properties/COFINSAliq/properties/vCOFINS/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        7.21
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "infAdProd": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/infAdProd",
+                      "type": "object",
+                      "title": "The Infadprod Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/det/properties/infAdProd/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "EAN 4051411545402"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "total": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total",
+                  "type": "object",
+                  "title": "The Total Schema",
+                  "required": [
+                    "ICMSTot"
+                  ],
+                  "properties": {
+                    "ICMSTot": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot",
+                      "type": "object",
+                      "title": "The Icmstot Schema",
+                      "required": [
+                        "vBC",
+                        "vICMS",
+                        "vBCST",
+                        "vST",
+                        "vProd",
+                        "vFrete",
+                        "vSeg",
+                        "vDesc",
+                        "vII",
+                        "vIPI",
+                        "vPIS",
+                        "vCOFINS",
+                        "vOutro",
+                        "vNF"
+                      ],
+                      "properties": {
+                        "vBC": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vBC",
+                          "type": "object",
+                          "title": "The Vbc Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vBC/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        },
+                        "vICMS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vICMS",
+                          "type": "object",
+                          "title": "The Vicms Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vICMS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                17.08
+                              ]
+                            }
+                          }
+                        },
+                        "vBCST": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vBCST",
+                          "type": "object",
+                          "title": "The Vbcst Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vBCST/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vST": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vST",
+                          "type": "object",
+                          "title": "The Vst Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vST/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vProd": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vProd",
+                          "type": "object",
+                          "title": "The Vprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vProd/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        },
+                        "vFrete": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vFrete",
+                          "type": "object",
+                          "title": "The Vfrete Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vFrete/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vSeg": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vSeg",
+                          "type": "object",
+                          "title": "The Vseg Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vSeg/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vDesc": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vDesc",
+                          "type": "object",
+                          "title": "The Vdesc Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vDesc/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vII": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vII",
+                          "type": "object",
+                          "title": "The Vii Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vII/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vIPI": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vIPI",
+                          "type": "object",
+                          "title": "The Vipi Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vIPI/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vPIS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vPIS",
+                          "type": "object",
+                          "title": "The Vpis Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vPIS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                1.57
+                              ]
+                            }
+                          }
+                        },
+                        "vCOFINS": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vCOFINS",
+                          "type": "object",
+                          "title": "The Vcofins Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vCOFINS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                7.21
+                              ]
+                            }
+                          }
+                        },
+                        "vOutro": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vOutro",
+                          "type": "object",
+                          "title": "The Voutro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vOutro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "vNF": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vNF",
+                          "type": "object",
+                          "title": "The Vnf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/total/properties/ICMSTot/properties/vNF/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                94.91
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "transp": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp",
+                  "type": "object",
+                  "title": "The Transp Schema",
+                  "required": [
+                    "modFrete",
+                    "transporta",
+                    "vol"
+                  ],
+                  "properties": {
+                    "modFrete": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/modFrete",
+                      "type": "object",
+                      "title": "The Modfrete Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/modFrete/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "transporta": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/transporta",
+                      "type": "object",
+                      "title": "The Transporta Schema",
+                      "required": [
+                        "xNome",
+                        "IE"
+                      ],
+                      "properties": {
+                        "xNome": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/transporta/properties/xNome",
+                          "type": "object",
+                          "title": "The Xnome Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/transporta/properties/xNome/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "IE": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/transporta/properties/IE",
+                          "type": "object",
+                          "title": "The Ie Schema"
+                        }
+                      }
+                    },
+                    "vol": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol",
+                      "type": "object",
+                      "title": "The Vol Schema",
+                      "required": [
+                        "qVol",
+                        "pesoL",
+                        "pesoB"
+                      ],
+                      "properties": {
+                        "qVol": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/qVol",
+                          "type": "object",
+                          "title": "The Qvol Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/qVol/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "pesoL": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/pesoL",
+                          "type": "object",
+                          "title": "The Pesol Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/pesoL/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                0.9
+                              ]
+                            }
+                          }
+                        },
+                        "pesoB": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/pesoB",
+                          "type": "object",
+                          "title": "The Pesob Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/transp/properties/vol/properties/pesoB/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                0.9
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "infAdic": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/infAdic",
+                  "type": "object",
+                  "title": "The Infadic Schema",
+                  "required": [
+                    "infCpl"
+                  ],
+                  "properties": {
+                    "infCpl": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/infAdic/properties/infCpl",
+                      "type": "object",
+                      "title": "The Infcpl Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/infNFe/properties/infAdic/properties/infCpl/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "Pedido 10161609426 Pedido interno 24205819 Condicoes de Pagto BOLETO\n                    ANTECIPADO = 94,91"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "{http://www.w3.org/2000/09/xmldsig#}Signature": {
+              "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature",
+              "type": "object",
+              "title": "The {http://www.w3.org/2000/09/xmldsig#}signature Schema",
+              "required": [
+                "{http://www.w3.org/2000/09/xmldsig#}SignedInfo",
+                "{http://www.w3.org/2000/09/xmldsig#}SignatureValue",
+                "{http://www.w3.org/2000/09/xmldsig#}KeyInfo"
+              ],
+              "properties": {
+                "{http://www.w3.org/2000/09/xmldsig#}SignedInfo": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}signedinfo Schema",
+                  "required": [
+                    "{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod",
+                    "{http://www.w3.org/2000/09/xmldsig#}SignatureMethod",
+                    "{http://www.w3.org/2000/09/xmldsig#}Reference"
+                  ],
+                  "properties": {
+                    "{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}canonicalizationmethod Schema",
+                      "required": [
+                        "@Algorithm"
+                      ],
+                      "properties": {
+                        "@Algorithm": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod/properties/@Algorithm",
+                          "type": "string",
+                          "title": "The @algorithm Schema",
+                          "default": "",
+                          "examples": [
+                            "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}SignatureMethod": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureMethod",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}signaturemethod Schema",
+                      "required": [
+                        "@Algorithm"
+                      ],
+                      "properties": {
+                        "@Algorithm": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureMethod/properties/@Algorithm",
+                          "type": "string",
+                          "title": "The @algorithm Schema",
+                          "default": "",
+                          "examples": [
+                            "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}Reference": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}reference Schema",
+                      "required": [
+                        "@URI",
+                        "{http://www.w3.org/2000/09/xmldsig#}Transforms",
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestMethod",
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestValue"
+                      ],
+                      "properties": {
+                        "@URI": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/@URI",
+                          "type": "string",
+                          "title": "The @uri Schema",
+                          "default": "",
+                          "examples": [
+                            "#NFe35130309339936000205550030008469231382917898"
+                          ],
+                          "pattern": ".*$"
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}Transforms": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}transforms Schema",
+                          "required": [
+                            "{http://www.w3.org/2000/09/xmldsig#}Transform"
+                          ],
+                          "properties": {
+                            "{http://www.w3.org/2000/09/xmldsig#}Transform": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform",
+                              "type": "array",
+                              "title": "The {http://www.w3.org/2000/09/xmldsig#}transform Schema",
+                              "items": {
+                                "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform/items",
+                                "type": "object",
+                                "title": "The Items Schema",
+                                "required": [
+                                  "@Algorithm"
+                                ],
+                                "properties": {
+                                  "@Algorithm": {
+                                    "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform/items/properties/@Algorithm",
+                                    "type": "string",
+                                    "title": "The @algorithm Schema",
+                                    "default": "",
+                                    "examples": [
+                                      "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                    ],
+                                    "pattern": ".*$"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestMethod": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestMethod",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}digestmethod Schema",
+                          "required": [
+                            "@Algorithm"
+                          ],
+                          "properties": {
+                            "@Algorithm": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestMethod/properties/@Algorithm",
+                              "type": "string",
+                              "title": "The @algorithm Schema",
+                              "default": "",
+                              "examples": [
+                                "http://www.w3.org/2000/09/xmldsig#sha1"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestValue": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestValue",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}digestvalue Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestValue/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Khhl3Fgh30yT1OL5Y1bBiTEIPxU="
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}SignatureValue": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureValue",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}signaturevalue Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureValue/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "fH0tPgKJmOOueVjigRVG7sDk3gDnYz89enY4CkcG6l7eEfe2+YsD3Hu+5OiPElFrBt4mw5+eNk4WHU+ju/XYMheOwZNcTHelZp7s1OFcv0aTNCZKCWgLKOQQNGQgWT5t6H78QPmGe9Vho1cczxwBln+VmaT8B5NI8kNqgFMvo8GYguKBZk2ICyyDggOm5vEiGEZCB7m3Dci8H+Mmho3IfG4wbshJdBpESxJKfsP7CJizYO9aQTLa0eDi9A+8FOWi6v8prpoeWpGnq/ZGsQiQnGmw/yFe8OVcSoTXx1d5rbNDcPLS3W2i+SNn9g1zI5HucBuJ4kIpaJpXxQoAfeH+GQ=="
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}KeyInfo": {
+                  "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}keyinfo Schema",
+                  "required": [
+                    "{http://www.w3.org/2000/09/xmldsig#}X509Data"
+                  ],
+                  "properties": {
+                    "{http://www.w3.org/2000/09/xmldsig#}X509Data": {
+                      "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}x509data Schema",
+                      "required": [
+                        "{http://www.w3.org/2000/09/xmldsig#}X509Certificate"
+                      ],
+                      "properties": {
+                        "{http://www.w3.org/2000/09/xmldsig#}X509Certificate": {
+                          "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data/properties/{http://www.w3.org/2000/09/xmldsig#}X509Certificate",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}x509certificate Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/nfeProc/properties/NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data/properties/{http://www.w3.org/2000/09/xmldsig#}X509Certificate/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "MIIIPjCCBiagAwIBAgIQZFS8UWZ/4nqslJtmQDCi4jANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwOTEzMDAwMDAwWhcNMTMwOTEyMjM1OTU5WjCB1jELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU5OTY2NzEdMBsGA1UEAxMUTlMyIENPTSBJTlRFUk5FVCBTIEExJTAjBgkqhkiG9w0BCQEWFmZpc2NhbEBuZXRzaG9lcy5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCbi5U3E1ot6/g+Q6P0qzC10/duAwL+iJVSsqBrMj26VvvMkUzqNH2nYaiXbpyNsCB+VLlWM4wd3PM8JdpYr3ZvhjF97NXJu04A76/zExO45nSFXQr0H7xW9TJSwZPrZo0nzepg01gNOxdLpie5xdOD+e5PrK3zuc+2oFM5X4zSCGKr6iLu08+01Y6RWxl1KXZfvV9UBpqWlkpyNQiliu+ZyvfIzUVEcz7pATj5K18KHhAF+XLx6/WGwvvY+yQbWKQvoRdBFbuXRy46TBAvIR3+UQonCNfJfqscX70mX4rm3DWnOpk65a5J2eQXoBhSmu5ycCxLiSKmh/jMiTQ7cnF9AgMBAAGjggNnMIIDYzCBrQYDVR0RBIGlMIGioDgGBWBMAQMEoC8ELTIwMDExOTc0MTY4NzY0NDE4NzMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAaBgVgTAEDAqARBA9NQVJDSU8gS1VNUlVJQU6gGQYFYEwBAwOgEAQOMDkzMzk5MzYwMDAxMTagFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRZmaXNjYWxAbmV0c2hvZXMuY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYDVR0PAQH/BAQDAgXgMIGJBgNVHSAEgYEwfzB9BgZgTAECAQswczBxBggrBgEFBQcCARZlaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX011bHRpcGxhL0RQQ19BQ19DZXJ0aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBcoFqgWIZWaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZYaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX011bHRpcGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3AuY2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAn0EicvbfA1yG+CbOjWp2EvRJXt0QmFtIAzit8RiFZfjlG4ad/P7K2SLP04D1no3+2WyiVogdHTuKJVnCTR5yKL2mEeLGUD3Vvc5cpIQg+Pce7oWYk//HJXLFmEg4zSsu0xHkJUuR1/FyZkzTTRCniaQrKEZJHwnHhcGtkrl3xnEQQt0l0U7pOctdc/LxEjarJaDdYwFqG7y7/Bzs92K6/M9BVtAlQpnsCOuCaN6qqWRD6CiH1bZMGs1Xtbo8KwrCBEaR5KpZKfoew/1uW8Tz9StCBCsB7MgY75v+PLy0jGv4qYsIYPkdzQWtQO5y11xJyKz8nmPZm/pZGInRrdmKvTOjiKYYCGcAt2wps4oM2W2zu7b5koiWRV6Q0/S9w1R/TOoFLBHGIsc/k4n7XpzMqx1EyGZQY3GPFXr6LKCtBMZLpoAiqhMHk7x7Sh4/axt+3Mo6or7KJyBpo4hozB45bD277v4O99vSHtSiU4Cz3EattDlW8Us0HG5dwmNIklmbQ+7n9ycp6XekfHe/lT2oBL8W1xPC2svsozDEV++h4b3/GqBDnV6FfmJRn9QVkhHsGYawF1u3U68vobzfal/4Qz/uGP2mF7fHBwHS5XVl3GCoVCIHcUM5M79nohzJePVOdGKImAUZJ0qPi+cdgKk4Y5oaE+WmccNgusrFWVbgH3M="
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "{http://www.portalfiscal.inf.br/nfe}protNFe": {
+          "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe",
+          "type": "object",
+          "title": "The {http://www.portalfiscal.inf.br/nfe}protnfe Schema",
+          "required": [
+            "@versao",
+            "{http://www.portalfiscal.inf.br/nfe}infProt"
+          ],
+          "properties": {
+            "@versao": {
+              "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/@versao",
+              "type": "number",
+              "title": "The @versao Schema",
+              "default": 0,
+              "examples": [
+                2
+              ]
+            },
+            "{http://www.portalfiscal.inf.br/nfe}infProt": {
+              "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt",
+              "type": "object",
+              "title": "The {http://www.portalfiscal.inf.br/nfe}infprot Schema",
+              "required": [
+                "{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                "{http://www.portalfiscal.inf.br/nfe}verAplic",
+                "{http://www.portalfiscal.inf.br/nfe}chNFe",
+                "{http://www.portalfiscal.inf.br/nfe}dhRecbto",
+                "{http://www.portalfiscal.inf.br/nfe}nProt",
+                "{http://www.portalfiscal.inf.br/nfe}digVal",
+                "{http://www.portalfiscal.inf.br/nfe}cStat",
+                "{http://www.portalfiscal.inf.br/nfe}xMotivo"
+              ],
+              "properties": {
+                "{http://www.portalfiscal.inf.br/nfe}tpAmb": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}tpamb Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}verAplic": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}verAplic",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}veraplic Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}verAplic/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "SP_NFE_PL_006q"
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}chNFe": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}chNFe",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}chnfe Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}chNFe/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0.0,
+                      "examples": [
+                        3.5130309339936e+43
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}dhRecbto": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}dhRecbto",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}dhrecbto Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}dhRecbto/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "2013-03-20T09:39:04"
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}nProt": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}nProt",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}nprot Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}nProt/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        135130163038192
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}digVal": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}digVal",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}digval Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}digVal/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "Khhl3Fgh30yT1OL5Y1bBiTEIPxU="
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}cStat": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}cStat",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}cstat Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}cStat/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        100
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}xMotivo": {
+                  "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}xMotivo",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}xmotivo Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}xMotivo/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "Autorizado o uso da NF-e"
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2649 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "{http://www.portalfiscal.inf.br/nfe}nfeProc"
+  ],
+  "properties": {
+    "{http://www.portalfiscal.inf.br/nfe}nfeProc": {
+      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc",
+      "type": "object",
+      "title": "The {http://www.portalfiscal.inf.br/nfe}nfeproc Schema",
+      "required": [
+        "@versao",
+        "{http://www.portalfiscal.inf.br/nfe}NFe",
+        "{http://www.portalfiscal.inf.br/nfe}protNFe"
+      ],
+      "properties": {
+        "@versao": {
+          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/@versao",
+          "type": "number",
+          "title": "The @versao Schema",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "{http://www.portalfiscal.inf.br/nfe}NFe": {
+          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe",
+          "type": "object",
+          "title": "The {http://www.portalfiscal.inf.br/nfe}nfe Schema",
+          "required": [
+            "{http://www.portalfiscal.inf.br/nfe}infNFe",
+            "{http://www.w3.org/2000/09/xmldsig#}Signature"
+          ],
+          "properties": {
+            "{http://www.portalfiscal.inf.br/nfe}infNFe": {
+              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe",
+              "type": "object",
+              "title": "The {http://www.portalfiscal.inf.br/nfe}infnfe Schema",
+              "required": [
+                "@Id",
+                "@versao",
+                "{http://www.portalfiscal.inf.br/nfe}ide",
+                "{http://www.portalfiscal.inf.br/nfe}emit",
+                "{http://www.portalfiscal.inf.br/nfe}dest",
+                "{http://www.portalfiscal.inf.br/nfe}entrega",
+                "{http://www.portalfiscal.inf.br/nfe}det",
+                "{http://www.portalfiscal.inf.br/nfe}total",
+                "{http://www.portalfiscal.inf.br/nfe}transp",
+                "{http://www.portalfiscal.inf.br/nfe}infAdic"
+              ],
+              "properties": {
+                "@Id": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/@Id",
+                  "type": "string",
+                  "title": "The @id Schema",
+                  "default": "",
+                  "examples": [
+                    "NFe43121143708379008348550010000175461000000014"
+                  ],
+                  "pattern": ".*$"
+                },
+                "@versao": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/@versao",
+                  "type": "number",
+                  "title": "The @versao Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                },
+                "{http://www.portalfiscal.inf.br/nfe}ide": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}ide Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}cUF",
+                    "{http://www.portalfiscal.inf.br/nfe}cNF",
+                    "{http://www.portalfiscal.inf.br/nfe}natOp",
+                    "{http://www.portalfiscal.inf.br/nfe}indPag",
+                    "{http://www.portalfiscal.inf.br/nfe}mod",
+                    "{http://www.portalfiscal.inf.br/nfe}serie",
+                    "{http://www.portalfiscal.inf.br/nfe}nNF",
+                    "{http://www.portalfiscal.inf.br/nfe}dEmi",
+                    "{http://www.portalfiscal.inf.br/nfe}tpNF",
+                    "{http://www.portalfiscal.inf.br/nfe}cMunFG",
+                    "{http://www.portalfiscal.inf.br/nfe}tpImp",
+                    "{http://www.portalfiscal.inf.br/nfe}tpEmis",
+                    "{http://www.portalfiscal.inf.br/nfe}cDV",
+                    "{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                    "{http://www.portalfiscal.inf.br/nfe}finNFe",
+                    "{http://www.portalfiscal.inf.br/nfe}procEmi",
+                    "{http://www.portalfiscal.inf.br/nfe}verProc"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}cUF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cUF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cuf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cUF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            43
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cNF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cNF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}natOp": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}natOp",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}natop Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}natOp/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "REMESSA VINCUL.ECF VN"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}indPag": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}indPag",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}indpag Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}indPag/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}mod": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}mod",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}mod Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}mod/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            55
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}serie": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}serie",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}serie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}serie/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}nNF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}nNF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}nnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}nNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            17546
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}dEmi": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}dEmi",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}demi Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}dEmi/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "2012-11-23"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpNF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpNF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}tpnf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpNF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cMunFG": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cMunFG",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cmunfg Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cMunFG/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            4314902
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpImp": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpImp",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}tpimp Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpImp/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            2
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpEmis": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpEmis",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}tpemis Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpEmis/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cDV": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cDV",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cdv Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}cDV/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            4
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpAmb": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}tpamb Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}finNFe": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}finNFe",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}finnfe Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}finNFe/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}procEmi": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}procEmi",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}procemi Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}procEmi/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}verProc": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}verProc",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}verproc Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}ide/properties/{http://www.portalfiscal.inf.br/nfe}verProc/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "NeoGrid NFe 1.9.0.1"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}emit": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}emit Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}CNPJ",
+                    "{http://www.portalfiscal.inf.br/nfe}xNome",
+                    "{http://www.portalfiscal.inf.br/nfe}xFant",
+                    "{http://www.portalfiscal.inf.br/nfe}enderEmit",
+                    "{http://www.portalfiscal.inf.br/nfe}IE",
+                    "{http://www.portalfiscal.inf.br/nfe}CRT"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}CNPJ": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}CNPJ",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cnpj Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}CNPJ/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            43708379008348
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xNome": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}xNome",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xnome Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}xNome/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "FAST SHOP S.A."
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xFant": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}xFant",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xfant Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}xFant/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "FAST SHOP S.A."
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}enderEmit": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}enderemit Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr",
+                        "{http://www.portalfiscal.inf.br/nfe}nro",
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl",
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro",
+                        "{http://www.portalfiscal.inf.br/nfe}cMun",
+                        "{http://www.portalfiscal.inf.br/nfe}xMun",
+                        "{http://www.portalfiscal.inf.br/nfe}UF",
+                        "{http://www.portalfiscal.inf.br/nfe}CEP",
+                        "{http://www.portalfiscal.inf.br/nfe}cPais",
+                        "{http://www.portalfiscal.inf.br/nfe}xPais",
+                        "{http://www.portalfiscal.inf.br/nfe}fone"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xLgr",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xlgr Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xLgr/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "JOAO WALLIG"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}nro": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}nro",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}nro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}nro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1800
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xCpl",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xcpl Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xCpl/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "210 PISO NP"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xBairro",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xbairro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xBairro/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PASSO D.AREIA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}cMun",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}cMun/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                4314902
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xMun",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xMun/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PORTO ALEGRE"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}UF": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}UF",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}uf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}UF/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "RS"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CEP": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}CEP",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cep Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}CEP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                91349900
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cPais": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}cPais",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}cPais/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1058
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xPais": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xPais",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}xPais/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Brasil"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}fone": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}fone",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}fone Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}enderEmit/properties/{http://www.portalfiscal.inf.br/nfe}fone/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1132323200
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}IE": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}IE",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}ie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}IE/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            963395009
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}CRT": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}CRT",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}crt Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}emit/properties/{http://www.portalfiscal.inf.br/nfe}CRT/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            3
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}dest": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}dest Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}CPF",
+                    "{http://www.portalfiscal.inf.br/nfe}xNome",
+                    "{http://www.portalfiscal.inf.br/nfe}enderDest",
+                    "{http://www.portalfiscal.inf.br/nfe}IE",
+                    "{http://www.portalfiscal.inf.br/nfe}email"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}CPF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}CPF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cpf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}CPF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            12345678900
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xNome": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}xNome",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xnome Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}xNome/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "GIOVANI LIBRELOTTO"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}enderDest": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}enderdest Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr",
+                        "{http://www.portalfiscal.inf.br/nfe}nro",
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl",
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro",
+                        "{http://www.portalfiscal.inf.br/nfe}cMun",
+                        "{http://www.portalfiscal.inf.br/nfe}xMun",
+                        "{http://www.portalfiscal.inf.br/nfe}UF",
+                        "{http://www.portalfiscal.inf.br/nfe}CEP",
+                        "{http://www.portalfiscal.inf.br/nfe}cPais",
+                        "{http://www.portalfiscal.inf.br/nfe}xPais",
+                        "{http://www.portalfiscal.inf.br/nfe}fone"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xLgr",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xlgr Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xLgr/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "AV RORAIMA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}nro": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}nro",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}nro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}nro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1000
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xCpl",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xcpl Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xCpl/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "SALA 387"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xBairro",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xbairro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xBairro/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "CAMOBI"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}cMun",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}cMun/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                4316907
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xMun",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xmun Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xMun/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "SANTA MARIA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}UF": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}UF",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}uf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}UF/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "RS"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CEP": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}CEP",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cep Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}CEP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                97010041
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cPais": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}cPais",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}cPais/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1058
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xPais": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xPais",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xpais Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}xPais/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Brasil"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}fone": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}fone",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}fone Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}enderDest/properties/{http://www.portalfiscal.inf.br/nfe}fone/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                5591234567
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}IE": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}IE",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}ie Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}IE/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "ISENTO"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}email": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}email",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}email Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}dest/properties/{http://www.portalfiscal.inf.br/nfe}email/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "librelotto@mail.com"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}entrega": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}entrega Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}CPF",
+                    "{http://www.portalfiscal.inf.br/nfe}xLgr",
+                    "{http://www.portalfiscal.inf.br/nfe}nro",
+                    "{http://www.portalfiscal.inf.br/nfe}xCpl",
+                    "{http://www.portalfiscal.inf.br/nfe}xBairro",
+                    "{http://www.portalfiscal.inf.br/nfe}cMun",
+                    "{http://www.portalfiscal.inf.br/nfe}xMun",
+                    "{http://www.portalfiscal.inf.br/nfe}UF"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}CPF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}CPF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cpf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}CPF/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            12345678900
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xLgr",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xlgr Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xLgr/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "AV RORAIMA"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}nro": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}nro",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}nro Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}nro/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            1000
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xCpl",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xcpl Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xCpl/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "SALA 387"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xBairro",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xbairro Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xBairro/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "CAMOBI"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}cMun",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}cmun Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}cMun/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            4316907
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xMun",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}xmun Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}xMun/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "SANTA MARIA"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}UF": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}UF",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}uf Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}entrega/properties/{http://www.portalfiscal.inf.br/nfe}UF/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "RS"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}det": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}det Schema",
+                  "required": [
+                    "@nItem",
+                    "{http://www.portalfiscal.inf.br/nfe}prod",
+                    "{http://www.portalfiscal.inf.br/nfe}imposto"
+                  ],
+                  "properties": {
+                    "@nItem": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/@nItem",
+                      "type": "number",
+                      "title": "The @nitem Schema",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}prod": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}prod Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}cProd",
+                        "{http://www.portalfiscal.inf.br/nfe}cEAN",
+                        "{http://www.portalfiscal.inf.br/nfe}xProd",
+                        "{http://www.portalfiscal.inf.br/nfe}NCM",
+                        "{http://www.portalfiscal.inf.br/nfe}CFOP",
+                        "{http://www.portalfiscal.inf.br/nfe}uCom",
+                        "{http://www.portalfiscal.inf.br/nfe}qCom",
+                        "{http://www.portalfiscal.inf.br/nfe}vUnCom",
+                        "{http://www.portalfiscal.inf.br/nfe}vProd",
+                        "{http://www.portalfiscal.inf.br/nfe}cEANTrib",
+                        "{http://www.portalfiscal.inf.br/nfe}uTrib",
+                        "{http://www.portalfiscal.inf.br/nfe}qTrib",
+                        "{http://www.portalfiscal.inf.br/nfe}vUnTrib",
+                        "{http://www.portalfiscal.inf.br/nfe}indTot"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}cProd": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cProd",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cProd/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "AEMD387BZA"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cEAN": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cEAN",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cean Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cEAN/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                885909545759
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xProd": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}xProd",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}xprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}xProd/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}NCM": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}NCM",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}ncm Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}NCM/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                84715010
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CFOP": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}CFOP",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cfop Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}CFOP/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                5929
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}uCom": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}uCom",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}ucom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}uCom/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PC"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}qCom": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}qCom",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}qcom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}qCom/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vUnCom": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vUnCom",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vuncom Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vUnCom/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                2269
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vProd": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vProd",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vProd/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                2269
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cEANTrib": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cEANTrib",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}ceantrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}cEANTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                885909545759
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}uTrib": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}uTrib",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}utrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}uTrib/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "PC"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}qTrib": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}qTrib",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}qtrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}qTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vUnTrib": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vUnTrib",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vuntrib Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}vUnTrib/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                2269
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}indTot": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}indTot",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}indtot Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}prod/properties/{http://www.portalfiscal.inf.br/nfe}indTot/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}imposto": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}imposto Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}ICMS",
+                        "{http://www.portalfiscal.inf.br/nfe}PIS",
+                        "{http://www.portalfiscal.inf.br/nfe}COFINS"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}ICMS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}icms Schema",
+                          "required": [
+                            "{http://www.portalfiscal.inf.br/nfe}ICMS60"
+                          ],
+                          "properties": {
+                            "{http://www.portalfiscal.inf.br/nfe}ICMS60": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60",
+                              "type": "object",
+                              "title": "The {http://www.portalfiscal.inf.br/nfe}icms60 Schema",
+                              "required": [
+                                "{http://www.portalfiscal.inf.br/nfe}orig",
+                                "{http://www.portalfiscal.inf.br/nfe}CST",
+                                "{http://www.portalfiscal.inf.br/nfe}vBCSTRet",
+                                "{http://www.portalfiscal.inf.br/nfe}vICMSSTRet"
+                              ],
+                              "properties": {
+                                "{http://www.portalfiscal.inf.br/nfe}orig": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}orig",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}orig Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}orig/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        2
+                                      ]
+                                    }
+                                  }
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}CST",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        60
+                                      ]
+                                    }
+                                  }
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vBCSTRet": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}vBCSTRet",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}vbcstret Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}vBCSTRet/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        2229.9
+                                      ]
+                                    }
+                                  }
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vICMSSTRet": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}vICMSSTRet",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}vicmsstret Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}ICMS/properties/{http://www.portalfiscal.inf.br/nfe}ICMS60/properties/{http://www.portalfiscal.inf.br/nfe}vICMSSTRet/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0.0,
+                                      "examples": [
+                                        76.91
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}PIS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}PIS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}pis Schema",
+                          "required": [
+                            "{http://www.portalfiscal.inf.br/nfe}PISNT"
+                          ],
+                          "properties": {
+                            "{http://www.portalfiscal.inf.br/nfe}PISNT": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}PIS/properties/{http://www.portalfiscal.inf.br/nfe}PISNT",
+                              "type": "object",
+                              "title": "The {http://www.portalfiscal.inf.br/nfe}pisnt Schema",
+                              "required": [
+                                "{http://www.portalfiscal.inf.br/nfe}CST"
+                              ],
+                              "properties": {
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}PIS/properties/{http://www.portalfiscal.inf.br/nfe}PISNT/properties/{http://www.portalfiscal.inf.br/nfe}CST",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}PIS/properties/{http://www.portalfiscal.inf.br/nfe}PISNT/properties/{http://www.portalfiscal.inf.br/nfe}CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        8
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}COFINS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}COFINS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}cofins Schema",
+                          "required": [
+                            "{http://www.portalfiscal.inf.br/nfe}COFINSNT"
+                          ],
+                          "properties": {
+                            "{http://www.portalfiscal.inf.br/nfe}COFINSNT": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}COFINS/properties/{http://www.portalfiscal.inf.br/nfe}COFINSNT",
+                              "type": "object",
+                              "title": "The {http://www.portalfiscal.inf.br/nfe}cofinsnt Schema",
+                              "required": [
+                                "{http://www.portalfiscal.inf.br/nfe}CST"
+                              ],
+                              "properties": {
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}COFINS/properties/{http://www.portalfiscal.inf.br/nfe}COFINSNT/properties/{http://www.portalfiscal.inf.br/nfe}CST",
+                                  "type": "object",
+                                  "title": "The {http://www.portalfiscal.inf.br/nfe}cst Schema",
+                                  "required": [
+                                    "$"
+                                  ],
+                                  "properties": {
+                                    "$": {
+                                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}det/properties/{http://www.portalfiscal.inf.br/nfe}imposto/properties/{http://www.portalfiscal.inf.br/nfe}COFINS/properties/{http://www.portalfiscal.inf.br/nfe}COFINSNT/properties/{http://www.portalfiscal.inf.br/nfe}CST/properties/$",
+                                      "type": "number",
+                                      "title": "The $ Schema",
+                                      "default": 0,
+                                      "examples": [
+                                        8
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}total": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}total Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}ICMSTot"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}ICMSTot": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}icmstot Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}vBC",
+                        "{http://www.portalfiscal.inf.br/nfe}vICMS",
+                        "{http://www.portalfiscal.inf.br/nfe}vBCST",
+                        "{http://www.portalfiscal.inf.br/nfe}vST",
+                        "{http://www.portalfiscal.inf.br/nfe}vProd",
+                        "{http://www.portalfiscal.inf.br/nfe}vFrete",
+                        "{http://www.portalfiscal.inf.br/nfe}vSeg",
+                        "{http://www.portalfiscal.inf.br/nfe}vDesc",
+                        "{http://www.portalfiscal.inf.br/nfe}vII",
+                        "{http://www.portalfiscal.inf.br/nfe}vIPI",
+                        "{http://www.portalfiscal.inf.br/nfe}vPIS",
+                        "{http://www.portalfiscal.inf.br/nfe}vCOFINS",
+                        "{http://www.portalfiscal.inf.br/nfe}vOutro",
+                        "{http://www.portalfiscal.inf.br/nfe}vNF"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}vBC": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vBC",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vbc Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vBC/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vICMS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vICMS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vicms Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vICMS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vBCST": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vBCST",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vbcst Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vBCST/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vST": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vST",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vst Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vST/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vProd": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vProd",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vprod Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vProd/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                2269
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vFrete": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vFrete",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vfrete Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vFrete/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vSeg": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vSeg",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vseg Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vSeg/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vDesc": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vDesc",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vdesc Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vDesc/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vII": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vII",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vii Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vII/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vIPI": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vIPI",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vipi Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vIPI/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vPIS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vPIS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vpis Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vPIS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vCOFINS": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vCOFINS",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vcofins Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vCOFINS/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vOutro": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vOutro",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}voutro Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vOutro/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vNF": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vNF",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}vnf Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}total/properties/{http://www.portalfiscal.inf.br/nfe}ICMSTot/properties/{http://www.portalfiscal.inf.br/nfe}vNF/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                2269
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}transp": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}transp Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}modFrete",
+                    "{http://www.portalfiscal.inf.br/nfe}vol"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}modFrete": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}modFrete",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}modfrete Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}modFrete/properties/$",
+                          "type": "number",
+                          "title": "The $ Schema",
+                          "default": 0,
+                          "examples": [
+                            9
+                          ]
+                        }
+                      }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}vol": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}vol Schema",
+                      "required": [
+                        "{http://www.portalfiscal.inf.br/nfe}qVol",
+                        "{http://www.portalfiscal.inf.br/nfe}esp",
+                        "{http://www.portalfiscal.inf.br/nfe}pesoL",
+                        "{http://www.portalfiscal.inf.br/nfe}pesoB"
+                      ],
+                      "properties": {
+                        "{http://www.portalfiscal.inf.br/nfe}qVol": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}qVol",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}qvol Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}qVol/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}esp": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}esp",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}esp Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}esp/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "volume"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}pesoL": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}pesoL",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}pesol Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}pesoL/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                2.5
+                              ]
+                            }
+                          }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}pesoB": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}pesoB",
+                          "type": "object",
+                          "title": "The {http://www.portalfiscal.inf.br/nfe}pesob Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}transp/properties/{http://www.portalfiscal.inf.br/nfe}vol/properties/{http://www.portalfiscal.inf.br/nfe}pesoB/properties/$",
+                              "type": "number",
+                              "title": "The $ Schema",
+                              "default": 0.0,
+                              "examples": [
+                                2.5
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}infAdic": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}infAdic",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}infadic Schema",
+                  "required": [
+                    "{http://www.portalfiscal.inf.br/nfe}infCpl"
+                  ],
+                  "properties": {
+                    "{http://www.portalfiscal.inf.br/nfe}infCpl": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}infAdic/properties/{http://www.portalfiscal.inf.br/nfe}infCpl",
+                      "type": "object",
+                      "title": "The {http://www.portalfiscal.inf.br/nfe}infcpl Schema",
+                      "required": [
+                        "$"
+                      ],
+                      "properties": {
+                        "$": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.portalfiscal.inf.br/nfe}infNFe/properties/{http://www.portalfiscal.inf.br/nfe}infAdic/properties/{http://www.portalfiscal.inf.br/nfe}infCpl/properties/$",
+                          "type": "string",
+                          "title": "The $ Schema",
+                          "default": "",
+                          "examples": [
+                            "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "{http://www.w3.org/2000/09/xmldsig#}Signature": {
+              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature",
+              "type": "object",
+              "title": "The {http://www.w3.org/2000/09/xmldsig#}signature Schema",
+              "required": [
+                "{http://www.w3.org/2000/09/xmldsig#}SignedInfo",
+                "{http://www.w3.org/2000/09/xmldsig#}SignatureValue",
+                "{http://www.w3.org/2000/09/xmldsig#}KeyInfo"
+              ],
+              "properties": {
+                "{http://www.w3.org/2000/09/xmldsig#}SignedInfo": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}signedinfo Schema",
+                  "required": [
+                    "{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod",
+                    "{http://www.w3.org/2000/09/xmldsig#}SignatureMethod",
+                    "{http://www.w3.org/2000/09/xmldsig#}Reference"
+                  ],
+                  "properties": {
+                    "{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}canonicalizationmethod Schema",
+                      "required": [
+                        "@Algorithm"
+                      ],
+                      "properties": {
+                        "@Algorithm": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod/properties/@Algorithm",
+                          "type": "string",
+                          "title": "The @algorithm Schema",
+                          "default": "",
+                          "examples": [
+                            "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}SignatureMethod": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureMethod",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}signaturemethod Schema",
+                      "required": [
+                        "@Algorithm"
+                      ],
+                      "properties": {
+                        "@Algorithm": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureMethod/properties/@Algorithm",
+                          "type": "string",
+                          "title": "The @algorithm Schema",
+                          "default": "",
+                          "examples": [
+                            "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                          ],
+                          "pattern": ".*$"
+                        }
+                      }
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}Reference": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}reference Schema",
+                      "required": [
+                        "@URI",
+                        "{http://www.w3.org/2000/09/xmldsig#}Transforms",
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestMethod",
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestValue"
+                      ],
+                      "properties": {
+                        "@URI": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/@URI",
+                          "type": "string",
+                          "title": "The @uri Schema",
+                          "default": "",
+                          "examples": [
+                            "#NFe43121143708379008348550010000175461000000014"
+                          ],
+                          "pattern": ".*$"
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}Transforms": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}transforms Schema",
+                          "required": [
+                            "{http://www.w3.org/2000/09/xmldsig#}Transform"
+                          ],
+                          "properties": {
+                            "{http://www.w3.org/2000/09/xmldsig#}Transform": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform",
+                              "type": "array",
+                              "title": "The {http://www.w3.org/2000/09/xmldsig#}transform Schema",
+                              "items": {
+                                "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform/items",
+                                "type": "object",
+                                "title": "The Items Schema",
+                                "required": [
+                                  "@Algorithm"
+                                ],
+                                "properties": {
+                                  "@Algorithm": {
+                                    "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}Transforms/properties/{http://www.w3.org/2000/09/xmldsig#}Transform/items/properties/@Algorithm",
+                                    "type": "string",
+                                    "title": "The @algorithm Schema",
+                                    "default": "",
+                                    "examples": [
+                                      "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                    ],
+                                    "pattern": ".*$"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestMethod": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestMethod",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}digestmethod Schema",
+                          "required": [
+                            "@Algorithm"
+                          ],
+                          "properties": {
+                            "@Algorithm": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestMethod/properties/@Algorithm",
+                              "type": "string",
+                              "title": "The @algorithm Schema",
+                              "default": "",
+                              "examples": [
+                                "http://www.w3.org/2000/09/xmldsig#sha1"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestValue": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestValue",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}digestvalue Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignedInfo/properties/{http://www.w3.org/2000/09/xmldsig#}Reference/properties/{http://www.w3.org/2000/09/xmldsig#}DigestValue/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}SignatureValue": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureValue",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}signaturevalue Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}SignatureValue/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ=="
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}KeyInfo": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo",
+                  "type": "object",
+                  "title": "The {http://www.w3.org/2000/09/xmldsig#}keyinfo Schema",
+                  "required": [
+                    "{http://www.w3.org/2000/09/xmldsig#}X509Data"
+                  ],
+                  "properties": {
+                    "{http://www.w3.org/2000/09/xmldsig#}X509Data": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data",
+                      "type": "object",
+                      "title": "The {http://www.w3.org/2000/09/xmldsig#}x509data Schema",
+                      "required": [
+                        "{http://www.w3.org/2000/09/xmldsig#}X509Certificate"
+                      ],
+                      "properties": {
+                        "{http://www.w3.org/2000/09/xmldsig#}X509Certificate": {
+                          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data/properties/{http://www.w3.org/2000/09/xmldsig#}X509Certificate",
+                          "type": "object",
+                          "title": "The {http://www.w3.org/2000/09/xmldsig#}x509certificate Schema",
+                          "required": [
+                            "$"
+                          ],
+                          "properties": {
+                            "$": {
+                              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}NFe/properties/{http://www.w3.org/2000/09/xmldsig#}Signature/properties/{http://www.w3.org/2000/09/xmldsig#}KeyInfo/properties/{http://www.w3.org/2000/09/xmldsig#}X509Data/properties/{http://www.w3.org/2000/09/xmldsig#}X509Certificate/properties/$",
+                              "type": "string",
+                              "title": "The $ Schema",
+                              "default": "",
+                              "examples": [
+                                "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                              ],
+                              "pattern": ".*$"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "{http://www.portalfiscal.inf.br/nfe}protNFe": {
+          "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe",
+          "type": "object",
+          "title": "The {http://www.portalfiscal.inf.br/nfe}protnfe Schema",
+          "required": [
+            "@versao",
+            "{http://www.portalfiscal.inf.br/nfe}infProt"
+          ],
+          "properties": {
+            "@versao": {
+              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/@versao",
+              "type": "number",
+              "title": "The @versao Schema",
+              "default": 0,
+              "examples": [
+                2
+              ]
+            },
+            "{http://www.portalfiscal.inf.br/nfe}infProt": {
+              "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt",
+              "type": "object",
+              "title": "The {http://www.portalfiscal.inf.br/nfe}infprot Schema",
+              "required": [
+                "{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                "{http://www.portalfiscal.inf.br/nfe}verAplic",
+                "{http://www.portalfiscal.inf.br/nfe}chNFe",
+                "{http://www.portalfiscal.inf.br/nfe}dhRecbto",
+                "{http://www.portalfiscal.inf.br/nfe}nProt",
+                "{http://www.portalfiscal.inf.br/nfe}digVal",
+                "{http://www.portalfiscal.inf.br/nfe}cStat",
+                "{http://www.portalfiscal.inf.br/nfe}xMotivo"
+              ],
+              "properties": {
+                "{http://www.portalfiscal.inf.br/nfe}tpAmb": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}tpamb Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}tpAmb/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}verAplic": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}verAplic",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}veraplic Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}verAplic/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        5
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}chNFe": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}chNFe",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}chnfe Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}chNFe/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0.0,
+                      "examples": [
+                        4.312114370837901e+43
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}dhRecbto": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}dhRecbto",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}dhrecbto Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}dhRecbto/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "2012-11-23T21:17:25"
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}nProt": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}nProt",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}nprot Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}nProt/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        143120163710583
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}digVal": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}digVal",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}digval Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}digVal/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}cStat": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}cStat",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}cstat Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}cStat/properties/$",
+                      "type": "number",
+                      "title": "The $ Schema",
+                      "default": 0,
+                      "examples": [
+                        100
+                      ]
+                    }
+                  }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}xMotivo": {
+                  "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}xMotivo",
+                  "type": "object",
+                  "title": "The {http://www.portalfiscal.inf.br/nfe}xmotivo Schema",
+                  "required": [
+                    "$"
+                  ],
+                  "properties": {
+                    "$": {
+                      "$id": "#/properties/{http://www.portalfiscal.inf.br/nfe}nfeProc/properties/{http://www.portalfiscal.inf.br/nfe}protNFe/properties/{http://www.portalfiscal.inf.br/nfe}infProt/properties/{http://www.portalfiscal.inf.br/nfe}xMotivo/properties/$",
+                      "type": "string",
+                      "title": "The $ Schema",
+                      "default": "",
+                      "examples": [
+                        "Autorizado o uso da NF-e"
+                      ],
+                      "pattern": ".*$"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

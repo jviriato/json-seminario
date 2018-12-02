@@ -1,0 +1,449 @@
+{
+    "{http://www.portalfiscal.inf.br/nfe}nfeProc": {
+        "@versao": 2.0,
+        "{http://www.portalfiscal.inf.br/nfe}NFe": {
+            "{http://www.portalfiscal.inf.br/nfe}infNFe": {
+                "@Id": "NFe35130743708379006485550050005663981000000013",
+                "@versao": 2.0,
+                "{http://www.portalfiscal.inf.br/nfe}ide": {
+                    "{http://www.portalfiscal.inf.br/nfe}cUF": {
+                        "$": 35
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cNF": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}natOp": {
+                        "$": "VENDA MERC.SUBTRB.UF VM"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}indPag": {
+                        "$": 0
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}mod": {
+                        "$": 55
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}serie": {
+                        "$": 5
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}nNF": {
+                        "$": 566398
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}dEmi": {
+                        "$": "2013-07-02"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpNF": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cMunFG": {
+                        "$": 3509205
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpImp": {
+                        "$": 2
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpEmis": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cDV": {
+                        "$": 3
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}tpAmb": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}finNFe": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}procEmi": {
+                        "$": 0
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}verProc": {
+                        "$": "NeoGrid NFe 1.16.1.1"
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}emit": {
+                    "{http://www.portalfiscal.inf.br/nfe}CNPJ": {
+                        "$": 43708379006485
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xNome": {
+                        "$": "FAST SHOP S.A."
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xFant": {
+                        "$": "FAST SHOP S.A."
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}enderEmit": {
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                            "$": "ANHANGUERA"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}nro": {
+                            "$": "S.N"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                            "$": "KM 37.5"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                            "$": "JORDANESIA"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                            "$": 3509205
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                            "$": "CAJAMAR"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}UF": {
+                            "$": "SP"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CEP": {
+                            "$": 7750000
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cPais": {
+                            "$": 1058
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xPais": {
+                            "$": "Brasil"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}fone": {
+                            "$": 1132323200
+                        }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}IE": {
+                        "$": 241091299113
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}CRT": {
+                        "$": 3
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}dest": {
+                    "{http://www.portalfiscal.inf.br/nfe}CPF": {
+                        "$": 12345678900
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xNome": {
+                        "$": "GIOVANI LIBRELOTTO"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}enderDest": {
+                        "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                            "$": "AV RORAIMA"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}nro": {
+                            "$": 1000
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                            "$": "SALA 387"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                            "$": "CAMOBI"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                            "$": 4316907
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                            "$": "SANTA MARIA"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}UF": {
+                            "$": "RS"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CEP": {
+                            "$": 97010041
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cPais": {
+                            "$": 1058
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xPais": {
+                            "$": "Brasil"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}fone": {
+                            "$": 5591234567
+                        }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}IE": {
+                        "$": "ISENTO"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}email": {
+                        "$": "librelotto@mail.com"
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}entrega": {
+                    "{http://www.portalfiscal.inf.br/nfe}CPF": {
+                        "$": 12345678900
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xLgr": {
+                        "$": "AV RORAIMA"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}nro": {
+                        "$": 1000
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xCpl": {
+                        "$": "SALA 387"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xBairro": {
+                        "$": "CAMOBI"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}cMun": {
+                        "$": 4316907
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                        "$": "SANTA MARIA"
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}UF": {
+                        "$": "RS"
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}det": {
+                    "@nItem": 1,
+                    "{http://www.portalfiscal.inf.br/nfe}prod": {
+                        "{http://www.portalfiscal.inf.br/nfe}cProd": {
+                            "$": "LG47LM6400"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cEAN": {
+                            "$": 7893299100079
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xProd": {
+                            "$": "SMART TV LED LCD 3D FHD 47P | 7893299100079| Rua: A"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}NCM": {
+                            "$": 85287200
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}CFOP": {
+                            "$": 6404
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}uCom": {
+                            "$": "PC"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}qCom": {
+                            "$": 1.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vUnCom": {
+                            "$": 2387.68
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vProd": {
+                            "$": 2387.68
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}cEANTrib": {
+                            "$": 7893299100079
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}uTrib": {
+                            "$": "PC"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}qTrib": {
+                            "$": 1.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vUnTrib": {
+                            "$": 2387.68
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vFrete": {
+                            "$": 51.8
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}indTot": {
+                            "$": 1
+                        }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}imposto": {
+                        "{http://www.portalfiscal.inf.br/nfe}ICMS": {
+                            "{http://www.portalfiscal.inf.br/nfe}ICMS60": {
+                                "{http://www.portalfiscal.inf.br/nfe}orig": {
+                                    "$": 4
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                    "$": 60
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vBCSTRet": {
+                                    "$": 2651.0
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vICMSSTRet": {
+                                    "$": 117.18
+                                }
+                            }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}PIS": {
+                            "{http://www.portalfiscal.inf.br/nfe}PISAliq": {
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                    "$": 1
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vBC": {
+                                    "$": 2439.48
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}pPIS": {
+                                    "$": 1.65
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vPIS": {
+                                    "$": 40.25
+                                }
+                            }
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}COFINS": {
+                            "{http://www.portalfiscal.inf.br/nfe}COFINSAliq": {
+                                "{http://www.portalfiscal.inf.br/nfe}CST": {
+                                    "$": 1
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vBC": {
+                                    "$": 2439.48
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}pCOFINS": {
+                                    "$": 7.6
+                                },
+                                "{http://www.portalfiscal.inf.br/nfe}vCOFINS": {
+                                    "$": 185.4
+                                }
+                            }
+                        }
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}total": {
+                    "{http://www.portalfiscal.inf.br/nfe}ICMSTot": {
+                        "{http://www.portalfiscal.inf.br/nfe}vBC": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vICMS": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vBCST": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vST": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vProd": {
+                            "$": 2387.68
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vFrete": {
+                            "$": 51.8
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vSeg": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vDesc": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vII": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vIPI": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vPIS": {
+                            "$": 40.25
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vCOFINS": {
+                            "$": 185.4
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vOutro": {
+                            "$": 0.0
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}vNF": {
+                            "$": 2439.48
+                        }
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}transp": {
+                    "{http://www.portalfiscal.inf.br/nfe}modFrete": {
+                        "$": 1
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}transporta": {
+                        "{http://www.portalfiscal.inf.br/nfe}CNPJ": {
+                            "$": 2058135000303
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xNome": {
+                            "$": "JOAO LUIZ DOS SANTOS LAGUNA"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}IE": {
+                            "$": 149732186112
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xEnder": {
+                            "$": "R SD JOSE PIRES BARBOSA FILHO 24"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}xMun": {
+                            "$": "SAO PAULO"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}UF": {
+                            "$": "SP"
+                        }
+                    },
+                    "{http://www.portalfiscal.inf.br/nfe}vol": {
+                        "{http://www.portalfiscal.inf.br/nfe}qVol": {
+                            "$": 1
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}esp": {
+                            "$": "volume"
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}pesoL": {
+                            "$": 20.9
+                        },
+                        "{http://www.portalfiscal.inf.br/nfe}pesoB": {
+                            "$": 20.9
+                        }
+                    }
+                },
+                "{http://www.portalfiscal.inf.br/nfe}infAdic": {
+                    "{http://www.portalfiscal.inf.br/nfe}infCpl": {
+                        "$": "Pedido: 145545 Tabela: 58 Vendedor: V102526 Usuario: TEFSITE Val. Aproximado\n                    dos Tributos - R$975,61 (40,86%). Fonte: IBPT. Obs: G: 000 00 Em ate 7 dias apos\n                    a entrega, se o produto apresentar defeito, a troca podera ser efetuada\n                    diretamente em qualquer das lojas da FAST SHOP no mesmo Estado de emissao do\n                    documento fiscal, desde que ausentes avarias ou danos aparentes, sem laudo\n                    tecnico ou procedimento de garantia previsto nos artigos 18 a 26 do Codigo de\n                    Defesa do Consumidor. A troca se dara mediante apresentacao da nota fiscal,\n                    embalagem original e acessorios. Essa troca em 7 dias, nas lojas, e sem maiores\n                    formalidades, e um especial beneficio aos nossos clientes, independentemente dos\n                    termos e prazos das garantias legal e/ou contratual previstas para o\n                    produto/servico (artigos 18 a 26 da lei 8.078/90). Substituicao Trib.ICMS item 1\n                    cf. RICMS Art 313-Z19"
+                    }
+                }
+            },
+            "{http://www.w3.org/2000/09/xmldsig#}Signature": {
+                "{http://www.w3.org/2000/09/xmldsig#}SignedInfo": {
+                    "{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod": {
+                        "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}SignatureMethod": {
+                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                    },
+                    "{http://www.w3.org/2000/09/xmldsig#}Reference": {
+                        "@URI": "#NFe35130743708379006485550050005663981000000013",
+                        "{http://www.w3.org/2000/09/xmldsig#}Transforms": {
+                            "{http://www.w3.org/2000/09/xmldsig#}Transform": [
+                                {
+                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                },
+                                {
+                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                }
+                            ]
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestMethod": {
+                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                        },
+                        "{http://www.w3.org/2000/09/xmldsig#}DigestValue": {
+                            "$": "s/uixIqU3qCYCsOaUntT3SsED3s="
+                        }
+                    }
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}SignatureValue": {
+                    "$": "q5ez8xm5VTJaEymoYaly4x4MHyhmwPNpKhLAofFM7Ft8Y+wCvvX+Bh2O+Nvnlg0NXEFTOkYzErZ0AeEz9G/9X5CT3LX1R9iQ+sg81zMbiotPxac0VY1NVqm12Lz3s7+XnqYXOw4141rkOwDWHw2mcwkDIdELER9D13KFv6ERE0poUGkeVki4hRHbuES7WNBMFWNB+hYvQ2I/Yn33xX1jMIx41d1oqaV+cWCau+Hx9o20Ofd9YOvOEmy9Dwdo2eArLqzWYAsjHhlrYapDeubpXpSoc4qF6F1mWmMCwDBh3MXH1ejoeUqdJGG0EMIw/8pfHGk5S6QZ6aMvG0hsUCJcyQ=="
+                },
+                "{http://www.w3.org/2000/09/xmldsig#}KeyInfo": {
+                    "{http://www.w3.org/2000/09/xmldsig#}X509Data": {
+                        "{http://www.w3.org/2000/09/xmldsig#}X509Certificate": {
+                            "$": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                        }
+                    }
+                }
+            }
+        },
+        "{http://www.portalfiscal.inf.br/nfe}protNFe": {
+            "@versao": 2.0,
+            "{http://www.portalfiscal.inf.br/nfe}infProt": {
+                "{http://www.portalfiscal.inf.br/nfe}tpAmb": {
+                    "$": 1
+                },
+                "{http://www.portalfiscal.inf.br/nfe}verAplic": {
+                    "$": 5.0
+                },
+                "{http://www.portalfiscal.inf.br/nfe}chNFe": {
+                    "$": 35130743708379006485550050005663981000000013
+                },
+                "{http://www.portalfiscal.inf.br/nfe}dhRecbto": {
+                    "$": "2013-07-02T17:56:14"
+                },
+                "{http://www.portalfiscal.inf.br/nfe}nProt": {
+                    "$": 135130390612170
+                },
+                "{http://www.portalfiscal.inf.br/nfe}digVal": {
+                    "$": "s/uixIqU3qCYCsOaUntT3SsED3s="
+                },
+                "{http://www.portalfiscal.inf.br/nfe}cStat": {
+                    "$": 100
+                },
+                "{http://www.portalfiscal.inf.br/nfe}xMotivo": {
+                    "$": "Autorizado o uso da NF-e"
+                }
+            }
+        }
+    }
+}

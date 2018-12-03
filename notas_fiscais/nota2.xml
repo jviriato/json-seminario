@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
-    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+<nfeProc versao="2.00">
+    <NFe>
         <infNFe Id="NFe43121143708379008348550010000175461000000014" versao="2.00">
             <ide>
                 <cUF>43</cUF>

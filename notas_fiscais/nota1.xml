@@ -167,7 +167,7 @@
             </KeyInfo>
         </Signature>
     </NFe>
-    <protNFe versao="2.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <protNFe versao="2.00">
         <infProt>
             <tpAmb>1</tpAmb>
             <verAplic>SP_NFE_PL_006q</verAplic>

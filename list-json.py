@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#1. Converter notas fiscais XML para JSON
+#1. Lista de produtos, ordenado por preço
 
 import json
 from xmljson import badgerfish as bf
@@ -13,7 +13,6 @@ def main():
         if filename.endswith(".json"):
             file = open(directory + filename)
             JSON_CONTENT = json.load(file)
-            # nome  = JSON_CONTENT['nfeProc']['NFe']['infNFe']['det'][i]['prod']['xProd'] OKAY
             json_parse  = JSON_CONTENT['nfeProc']['NFe']['infNFe']['det']
             if type(json_parse) == list:
                 for i in range(0, len(json_parse)):

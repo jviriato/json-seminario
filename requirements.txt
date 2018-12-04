@@ -1,4 +1,4 @@
 Jinja2==2.10
 MarkupSafe==1.1.0
-pkg-resources==0.0.0
+jsonschema>=2.4.0
 xmljson==0.2.0
